@@ -1,8 +1,17 @@
-# React + Vite
+### <samp>Coding Assignment</samp>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### <samp>Sistem Penunjang Keputusan</samp>
 
-Currently, two official plugins are available:
+<samp><i>Based on <a href="https://pekatpkm.my.id/index.php/JP/article/view/285/234">"SISTEM PENDUKUNG KEPUTUSAN PEMILIHAN SISWA BERPRESTASI MENGGUNAKAN METODE WEIGHTED PRODUCT (WP) PADA SMK MUHAMMADIYAH 3 BANDUNG"</a></i></samp>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<samp>Nama : Melvin Austin Korwa</samp>
+<samp>NPM : 10121709</samp>
+<samp>Kelas : 4KA18</samp>
+
+<br>
+
+#### <samp>Built With</samp>
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
