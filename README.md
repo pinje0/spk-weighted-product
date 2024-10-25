@@ -4,11 +4,9 @@
 
 <samp><i>Based on <a href="https://pekatpkm.my.id/index.php/JP/article/view/285/234">"SISTEM PENDUKUNG KEPUTUSAN PEMILIHAN SISWA BERPRESTASI MENGGUNAKAN METODE WEIGHTED PRODUCT (WP) PADA SMK MUHAMMADIYAH 3 BANDUNG"</a></i></samp>
 
-<samp>Nama : Melvin Austin Korwa</samp>
-<samp>NPM : 10121709</samp>
-<samp>Kelas : 4KA18</samp>
-
-<br>
+<samp>Nama : Melvin Austin Korwa</samp><br>
+<samp>NPM : 10121709</samp><br>
+<samp>Kelas : 4KA18</samp><br>
 
 #### <samp>Built With</samp>
 
