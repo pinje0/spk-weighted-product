@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import Alternatif from "./pages/Alternatif";
 import Kriteria from "./pages/Kriteria";
 import Pembobotan from "./pages/Pembobotan";
-// import Perhitungan from "./pages/Perhitungan";
+import Penilaian from "./pages/Penilaian";
+import Perhitungan from "./pages/Perhitungan";
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
           <Route path="/alternatif" element={<Alternatif />} />
           <Route path="/kriteria" element={<Kriteria />} />
           <Route path="/pembobotan" element={<Pembobotan />} />
-          {/* <Route path="/perhitungan" element={<Perhitungan />} />  */}
+          <Route path="/penilaian" element={<Penilaian />} />
+          <Route path="/perhitungan" element={<Perhitungan />} />
         </Routes>
       </div>
     </Router>
