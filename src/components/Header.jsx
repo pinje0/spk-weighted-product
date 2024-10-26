@@ -56,6 +56,14 @@ const Header = () => {
                 </li>
                 <li className="group">
                   <Link
+                    to="/penilaian"
+                    className="hover-opacity-animation mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                  >
+                    Penilaian
+                  </Link>
+                </li>
+                <li className="group">
+                  <Link
                     to="/perhitungan"
                     className="hover-opacity-animation mx-8 flex py-2 text-base text-dark group-hover:text-primary"
                   >
