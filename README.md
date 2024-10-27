@@ -143,7 +143,3 @@ Make sure you have the following installed on your machine:
    ```
 
 5. Open your browser and navigate to http://localhost:5173 to access the application.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
