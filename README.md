@@ -74,33 +74,24 @@ The Weighted Product method is used to evaluate alternatives based on multiple c
 2. **Weighting**: The normalized scores are raised to the power of their respective weights.
 3. **Multiplication**: The results are multiplied together for each alternative, yielding a final score.
 
-<!-- ### Formula -->
+### Formula
 
-<!-- The final score for each alternative is calculated as follows: -->
+The final score for each alternative is calculated as follows:
+
+<img  src="./public/Screenshot 2024-10-28 005131.png"  width="50%" />
 
 <!-- \[
 Score*i = \prod*{j=1}^{n} (X\_{ij})^{W_j}
 \] -->
 
-<!-- Where:
+Where:
 
-- \( Score_i \) = Final score for alternative \( i \)
+<!-- - \( Score_i \) = Final score for alternative \( i \)
 - \( X\_{ij} \) = Normalized score for alternative \( i \) under criterion \( j \)
 - \( W_j \) = Weight for criterion \( j \)
 - \( n \) = Total number of criteria -->
 
-### Formula
-
-The final score for each alternative is calculated as follows:
-
-Score*i = ∏ (X*{ij})^{W_j} for j=1 to n
-
-Where:
-
-- **Score_i** = Final score for alternative **i**
-- **X\_{ij}** = Normalized score for alternative **i** under criterion **j**
-- **W_j** = Weight for criterion **j**
-- **n** = Total number of criteria
+<img src="./public/Screenshot 2024-10-28 005159.png" width="80%" />
 
 ## Data Flow
 
