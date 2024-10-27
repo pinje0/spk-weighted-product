@@ -91,7 +91,7 @@ Where:
 - \( W_j \) = Weight for criterion \( j \)
 - \( n \) = Total number of criteria -->
 
-<img src="./public/Screenshot 2024-10-28 005159.png" width="80%" />
+<img src="./public/Screenshot 2024-10-28 005159.png" width="50%" />
 
 ## Data Flow
 
