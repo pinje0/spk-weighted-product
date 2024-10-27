@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Perhitungan = () => {
+const Penilaian = () => {
   const [alternatives, setAlternatives] = useState([]);
   const [criteria, setCriteria] = useState([]);
   const [tableData, setTableData] = useState([]);
@@ -62,4 +62,4 @@ const Perhitungan = () => {
   );
 };
 
-export default Perhitungan;
+export default Penilaian;
