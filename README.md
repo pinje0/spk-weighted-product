@@ -8,7 +8,7 @@ Nama : Melvin Austin<br>
 NPM : 10121709<br>
 Kelas : 4KA18<br>
 
-#### <samp>Built With</samp>
+#### Built With
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
