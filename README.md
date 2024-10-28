@@ -8,6 +8,8 @@ Nama : Melvin Austin<br>
 NPM : 10121709<br>
 Kelas : 4KA18<br>
 
+Link to the website : https://10121709-spk-weighted-product.vercel.app/
+
 #### Built With
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
@@ -79,7 +81,7 @@ The Weighted Product method is used to evaluate alternatives based on multiple c
 
 The final score for each alternative is calculated as follows:
 
-<img  src="./public/Screenshot 2024-10-28 005131.png"  width="50%" />
+<img  src="./public/formula-1.png"  width="50%" />
 
 <!-- \[
 Score*i = \prod*{j=1}^{n} (X\_{ij})^{W_j}
@@ -92,7 +94,7 @@ Where:
 - \( W_j \) = Weight for criterion \( j \)
 - \( n \) = Total number of criteria -->
 
-<img src="./public/Screenshot 2024-10-28 005159.png" width="50%" />
+<img src="./public/formula-2.png" width="50%" />
 
 ## Data Flow
 
