@@ -48,19 +48,20 @@ const Home = () => {
   const loadMockData = () => {
     // Define mock Kriteria and Alternatif data
     const mockKriteriaData = [
-      { id: 1, kode: "C1", nama: "Subject A", bobot: 5, status: "BENEFIT" },
-      { id: 2, kode: "C2", nama: "Subject B", bobot: 4, status: "BENEFIT" },
-      { id: 3, kode: "C3", nama: "Subject C", bobot: 3, status: "BENEFIT" },
-      { id: 4, kode: "C4", nama: "Subject D", bobot: 2, status: "BENEFIT" },
-      { id: 5, kode: "C5", nama: "Subject E", bobot: 1, status: "BENEFIT" },
+      { id: 1, kode: "C1", nama: "Mathematics", bobot: 5, status: "BENEFIT" },
+      { id: 2, kode: "C2", nama: "Science", bobot: 4, status: "BENEFIT" },
+      { id: 3, kode: "C3", nama: "English Language", bobot: 3, status: "BENEFIT" },
+      { id: 4, kode: "C4", nama: "Physical Education", bobot: 2, status: "BENEFIT" },
+      { id: 5, kode: "C5", nama: "Art", bobot: 1, status: "BENEFIT" },
     ];
 
     const mockAlternatifData = [
-      { id: 1, kode: "A1", nama: "Mr. A", scores: [95, 90, 85, 80, 75] },
-      { id: 2, kode: "A2", nama: "Mr. B", scores: [75, 80, 85, 90, 95] },
-      { id: 3, kode: "A3", nama: "Mr. C", scores: [75, 80, 80, 80, 90] },
+      { id: 1, kode: "A1", nama: "John Smith", scores: [88, 92, 84, 76, 89] },
+      { id: 2, kode: "A2", nama: "Emily Johnson", scores: [90, 85, 79, 88, 92] },
+      { id: 3, kode: "A3", nama: "Michael Williams", scores: [70, 78, 88, 90, 75] },
+      { id: 4, kode: "A4", nama: "Sophia Brown", scores: [95, 87, 92, 89, 85] },
+      { id: 5, kode: "A5", nama: "James Davis", scores: [80, 83, 89, 78, 82] },
     ];
-
     const mockTableData = [];
 
     // Populate mock tableData based on Alternatif scores and Kriteria
@@ -82,6 +83,12 @@ const Home = () => {
 
     alert("Mock data successfully loaded!");
     window.location.reload(); // Refresh to display the new mock data in tables
+  };
+
+  const clearAllData = () => {
+    localStorage.clear(); // Clear all data in localStorage
+    alert("All data has been cleared!");
+    window.location.reload(); // Refresh the page to update the view
   };
 
   return (
@@ -134,6 +141,12 @@ const Home = () => {
             className="mt-6 px-4 py-2 bg-green-500 hover-opacity-animation text-white rounded"
           >
             Load Mock Data
+          </button>
+          <button
+            onClick={clearAllData}
+            className="mt-6 px-4 py-2 bg-red-500 hover-opacity-animation text-white rounded"
+          >
+            Clear All Data
           </button>
           <p className="mt-6 font-bold"></p>
         </div>
