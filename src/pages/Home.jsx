@@ -99,7 +99,7 @@ const Home = () => {
           <h2 className="mb-8 font-bold text-xl">SPK FOR ACHIEVING STUDENTS | Gunadarma University</h2>
           <p className="italic">Decision Support System</p>
           <p>Name: Melvin Austin</p>
-          <p>ID Number: 10121709</p>
+          <p>NPM: 10121709</p>
           <p>Class: 4KA18</p>
           <div className="w-3/5">
             <div className="relative flex py-5 items-center">
