@@ -22,6 +22,15 @@ const Kriteria = () => {
 
   const handleAddKriteria = (e) => {
     e.preventDefault();
+
+    // Check if the name already exists in kriteria
+    const isDuplicate = kriteria.some((k) => k.nama.toLowerCase() === namaKriteria.toLowerCase());
+    if (isDuplicate) {
+      alert("Kriteria with this name already exists");
+      return;
+    }
+
+    // Add new kriteria if not duplicate
     const newKriteria = {
       id: kriteria.length + 1,
       kode: `C${kriteria.length + 1}`,

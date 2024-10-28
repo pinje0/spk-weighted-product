@@ -23,6 +23,14 @@ const Alternatif = () => {
       alert("Nama Siswa tidak boleh kosong");
       return;
     }
+
+    // Check if the alternative name already exists
+    const isDuplicate = alternatives.some((alt) => alt.nama.toLowerCase() === namaSiswa.toLowerCase());
+    if (isDuplicate) {
+      alert("Nama Siswa sudah ada dalam daftar");
+      return;
+    }
+
     const newKodeAlternatif = `A${alternatives.length + 1}`;
     const newAlternative = {
       id: alternatives.length + 1,

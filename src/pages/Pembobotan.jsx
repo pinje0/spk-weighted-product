@@ -11,11 +11,10 @@ const Pembobotan = () => {
     return savedTableData ? JSON.parse(savedTableData) : [];
   });
 
-  const [editId, setEditId] = useState(null); // State for managing which row is being edited
-  const [editedNilai, setEditedNilai] = useState(""); // State for the edited value
+  const [editId, setEditId] = useState(null);
+  const [editedNilai, setEditedNilai] = useState("");
 
   useEffect(() => {
-    // Load Kriteria and Alternatif data from local storage
     const savedKriteria = JSON.parse(localStorage.getItem("kriteria")) || [];
     const savedAlternatif = JSON.parse(localStorage.getItem("alternatives")) || [];
     setKriteria(savedKriteria);
@@ -28,16 +27,29 @@ const Pembobotan = () => {
 
   const handleAddRow = (e) => {
     e.preventDefault();
+
     if (!selectedKriteria || !selectedAlternatif || !nilai) {
       alert("Please fill out all fields.");
       return;
     }
+
+    // Check if the selectedKriteria and selectedAlternatif combination already exists
+    const duplicateEntry = tableData.some(
+      (row) => row.kriteria === selectedKriteria && row.alternatif === selectedAlternatif
+    );
+
+    if (duplicateEntry) {
+      alert("This combination of Kriteria and Alternatif already has a score.");
+      return;
+    }
+
     const newRow = {
       id: tableData.length + 1,
       kriteria: selectedKriteria,
       alternatif: selectedAlternatif,
       nilai: parseInt(nilai),
     };
+
     setTableData([...tableData, newRow]);
     setSelectedKriteria("");
     setSelectedAlternatif("");
@@ -65,7 +77,7 @@ const Pembobotan = () => {
   };
 
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto mt-8 mb-10">
       <h1 className="text-xl font-bold mb-4">Pembobotan</h1>
 
       <form onSubmit={handleAddRow} className="mb-6">
@@ -110,7 +122,9 @@ const Pembobotan = () => {
           placeholder="Nilai"
           value={nilai}
           onChange={(e) => setNilai(e.target.value)}
-          className="border p-2 mr-2"
+          min="1"
+          max="100" // Example of validation for score range
+          className="border p-2 mr-2 w-20"
           required
         />
 
@@ -141,6 +155,8 @@ const Pembobotan = () => {
                     type="number"
                     value={editedNilai}
                     onChange={(e) => setEditedNilai(e.target.value)}
+                    min="1"
+                    max="100"
                     className="border p-1"
                   />
                 ) : (
