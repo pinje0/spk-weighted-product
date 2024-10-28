@@ -29,7 +29,7 @@ const Penilaian = () => {
   };
 
   return (
-    <div className="container mx-auto mt-8">
+    <div className="container mx-auto mt-8 mb-10">
       <h1 className="text-xl font-bold mb-4">Tabel Penilaian</h1>
 
       <table className="table-auto w-full">
