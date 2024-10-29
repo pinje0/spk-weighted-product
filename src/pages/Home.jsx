@@ -1,4 +1,4 @@
-// pages/Home.jsx
+import Footer from "../components/Footer";
 
 const Home = () => {
   const populateData = () => {
@@ -92,7 +92,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex min-w-10 h-full bg-zinc-800 mt-28 text-white">
+    <div className="flex flex-col min-w-10 h-full bg-neutral-900 mt-[90px] text-white">
       <div className="flex p-14 flex-row w-full">
         {/* Left Side - Text Content */}
         <div className="flex flex-col w-1/2 mt-10">
@@ -151,6 +151,7 @@ const Home = () => {
           <p className="mt-6 font-bold"></p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
