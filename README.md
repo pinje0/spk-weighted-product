@@ -105,7 +105,7 @@ Where:
 
 ## Flowchart
 
-<img src='./public/flowchart.png' width="40%" id="flowchart" />
+<img src='./public/flowchart.png' width="20%" id="flowchart" />
 
 The flowchart below illustrates the main data flow of the Decision Support System (DSS) application, detailing the steps involved in processing and calculating scores for alternatives based on multiple criteria.
 
