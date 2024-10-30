@@ -33,10 +33,11 @@ The Decision Support System (Sistem Pendukung Keputusan) for selecting outstandi
    - [Scores (Nilai)](#scores)
 3. [Weighted Product Method](#weighted-product-method)
 4. [Data Flow](#data-flow)
-5. [User Interface](#user-interface)
-6. [Installation and Usage](#installation-and-usage)
-7. [Contributing](#contributing)
-8. [License](#license)
+5. [Flowchart](#flowchart)
+6. [User Interface](#user-interface)
+7. [Installation and Usage](#installation-and-usage)
+8. [Contributing](#contributing)
+9. [License](#license)
 
 ## Introduction
 
@@ -101,6 +102,29 @@ Where:
 2. **Local Storage**: Data is stored in local storage for persistence.
 3. **Calculation**: Upon loading the calculation page, the application retrieves data, normalizes scores, applies weights, and computes the final scores using the Weighted Product method.
 4. **Output**: Results are displayed in a user-friendly format.
+
+## Flowchart
+
+<img src='./public/flowchart.png' width="40%" id="flowchart" />
+
+The flowchart below illustrates the main data flow of the Decision Support System (DSS) application, detailing the steps involved in processing and calculating scores for alternatives based on multiple criteria.
+
+1. **Start**: The flow begins when the application is launched, initiating the data input phase.
+2. **Input Alternatives**: Users enter the details of each alternative (such as student names) through the web interface, which are stored in local storage.
+
+3. **Input Criteria**: Users define criteria and assign weights to each, representing their relative importance.
+
+4. **Input Scores**: Scores are entered for each alternative based on the defined criteria.
+
+5. **Weighted Product Calculation**: Using the Weighted Product (WP) method, the application performs the following steps:
+
+   - **Normalization**: Scores for each criterion are normalized.
+   - **Weighting**: Each normalized score is raised to the power of its respective weight.
+   - **Multiplication**: The weighted scores are multiplied to calculate a final score for each alternative.
+
+6. **Display Results**: The calculated scores for each alternative are displayed on the Perhitungan page for users to review.
+
+7. **End**: The flow ends when the user has viewed the final scores.
 
 ## User Interface
 
