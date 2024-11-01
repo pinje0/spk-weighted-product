@@ -168,4 +168,4 @@ Make sure you have the following installed on your machine:
    npm run dev
    ```
 
-5. Open your browser and navigate to http://localhost:5173 to access the application.
+5. Open your browser and navigate to http://localhost:3000 to access the application.
